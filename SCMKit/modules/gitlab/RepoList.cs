@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using GitLabApiClient;
 
-namespace SCMKit.modules.gitlab
+namespace Kit.modules.gitlab
 {
     class RepoList
     {

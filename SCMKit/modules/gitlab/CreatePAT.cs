@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.IO;
 using GitLabApiClient;
 
-namespace SCMKit.modules.gitlab
+namespace Kit.modules.gitlab
 {
     class CreatePAT
     {
@@ -63,7 +63,7 @@ namespace SCMKit.modules.gitlab
                     // set header values
                     webRequest.Method = "POST";
                     webRequest.ContentType = "application/x-www-form-urlencoded";
-                    webRequest.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+                    webRequest.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
                     // if we need to pass the token obtained from the username/password auth
                     if (credential.Contains(":"))
@@ -91,7 +91,7 @@ namespace SCMKit.modules.gitlab
                             chars[i] = allowedChars[rd.Next(0, allowedChars.Length)];
                         }
                         string personalAccessTokenName = new string(chars);
-                        personalAccessTokenName = "SCMKIT-" + personalAccessTokenName;
+                        //personalAccessTokenName = "SCMKIT-" + personalAccessTokenName;
 
 
                         string body = "name=" + personalAccessTokenName + "&scopes[]=api&scopes[]=read_repository&scopes[]=write_repository";

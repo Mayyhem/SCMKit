@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace SCMKit.modules.gitlab
+namespace Kit.modules.gitlab
 {
 
     // custom class to handle the JSON output of API token permissions
@@ -81,7 +81,7 @@ namespace SCMKit.modules.gitlab
                         webRequestUserID.Method = "GET";
                         webRequestUserID.ContentType = "application/json";
                         webRequestUserID.Headers.Add("PRIVATE-TOKEN", credential);
-                        webRequestUserID.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+                        webRequestUserID.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
                         // get web response
                         WebResponse myWebResponseUserID = await webRequestUserID.GetResponseAsync();
@@ -111,7 +111,7 @@ namespace SCMKit.modules.gitlab
                         webRequest.Method = "GET";
                         webRequest.ContentType = "application/json";
                         webRequest.Headers.Add("PRIVATE-TOKEN", credential);
-                        webRequest.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+                        webRequest.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
                         // get web response
                         WebResponse myWebResponse = await webRequest.GetResponseAsync();
@@ -260,7 +260,7 @@ namespace SCMKit.modules.gitlab
                     webRequest.Method = "GET";
                     webRequest.ContentType = "application/json";
                     webRequest.Headers.Add("PRIVATE-TOKEN", credential);
-                    webRequest.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+                    webRequest.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
                     // get web response
                     WebResponse myWebResponse = await webRequest.GetResponseAsync();

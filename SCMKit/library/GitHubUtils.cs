@@ -4,7 +4,7 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using Octokit;
 
-namespace SCMKit.library
+namespace Kit.library
 {
     class GitHubUtils
     {
@@ -23,7 +23,7 @@ namespace SCMKit.library
                 Credentials auth = null;
                 Uri uri = new Uri(url);
 
-                client = new GitHubClient(new ProductHeaderValue("SCMKIT-5dc493ada400c79dd318abbe770dac7c"), uri);
+                client = new GitHubClient(new ProductHeaderValue("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"), uri);
 
                 // if username/password auth being used
                 if (credentials.Contains(":"))

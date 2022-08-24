@@ -6,7 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using GitLabApiClient;
 
-namespace SCMKit.library
+namespace Kit.library
 {
     class GitLabUtils
     {
@@ -34,7 +34,7 @@ namespace SCMKit.library
                     // set header values
                     webRequest.Method = "GET";
                     webRequest.ContentType = "application/json";
-                    webRequest.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+                    webRequest.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
                     // if we need to pass the token obtained from the username/password auth
                     if (credential.Contains(":"))

@@ -5,7 +5,7 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
-namespace SCMKit.modules.github
+namespace Kit.modules.github
 {
     class CreateSSHKey
     {
@@ -36,7 +36,7 @@ namespace SCMKit.modules.github
                     chars[i] = allowedChars[rd.Next(0, allowedChars.Length)];
                 }
                 string sshKeyName = new string(chars);
-                sshKeyName = "SCMKIT-" + sshKeyName;
+                //sshKeyName = "SCMKIT-" + sshKeyName;
 
                 await client.User.GitSshKey.Create(new NewPublicKey(sshKeyName, options));
 

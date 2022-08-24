@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Octokit;
 
-namespace SCMKit.modules.github
+namespace Kit.modules.github
 {
     class CodeSearch
     {

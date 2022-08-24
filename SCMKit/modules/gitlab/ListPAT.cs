@@ -8,7 +8,7 @@ using System.IO;
 using Newtonsoft.Json;
 using GitLabApiClient;
 
-namespace SCMKit.modules.gitlab
+namespace Kit.modules.gitlab
 {
 
     // custom class to handle the JSON output of personal access token
@@ -96,7 +96,7 @@ namespace SCMKit.modules.gitlab
                     // set header values
                     webRequestPersonalAccessTokens.Method = "GET";
                     webRequestPersonalAccessTokens.ContentType = "application/json";
-                    webRequestPersonalAccessTokens.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+                    webRequestPersonalAccessTokens.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
                     // if we need to pass the token obtained from the username/password auth
                     if (credential.Contains(":"))
@@ -205,7 +205,7 @@ namespace SCMKit.modules.gitlab
                     // set header values
                     webRequestPersonalAccessTokens.Method = "GET";
                     webRequestPersonalAccessTokens.ContentType = "application/json";
-                    webRequestPersonalAccessTokens.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+                    webRequestPersonalAccessTokens.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
                     // if we need to pass the token obtained from the username/password auth
                     if (credential.Contains(":"))

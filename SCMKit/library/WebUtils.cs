@@ -5,7 +5,7 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
-namespace SCMKit.library
+namespace Kit.library
 {
     class WebUtils
     {
@@ -22,7 +22,7 @@ namespace SCMKit.library
             request.Method = method;
             request.ContentType = "application/json";
             request.Accept = "application/vnd.github.v3+json";
-            request.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+            request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
             if (credential.Contains(":"))
             {
@@ -50,7 +50,7 @@ namespace SCMKit.library
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.Accept = "application/vnd.github.v3.raw+raw";
-            request.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+            request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
             if (credential.Contains(":"))
             {

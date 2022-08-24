@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
 
-namespace SCMKit.modules.bitbucket
+namespace Kit.modules.bitbucket
 {
     class RepoList
     {
@@ -58,7 +58,7 @@ namespace SCMKit.modules.bitbucket
                     // set header values
                     webRequest.Method = "GET";
                     webRequest.ContentType = "application/json";
-                    webRequest.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+                    webRequest.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
                     // if username/password auth was used, then pass the sessionID
                     if (credential.Contains(":"))
@@ -215,7 +215,7 @@ namespace SCMKit.modules.bitbucket
                     // set header values
                     webRequest.Method = "GET";
                     webRequest.ContentType = "application/json";
-                    webRequest.UserAgent = "SCMKIT-5dc493ada400c79dd318abbe770dac7c";
+                    webRequest.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
 
                     // if username/password auth was used, then pass the sessionID
                     if (credential.Contains(":"))
